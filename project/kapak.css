@@ -1,5 +1,13 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: url(kapak.jpg);
+    background-size: cover;
+}
+
 header{
-    background-color: wheat;
+    background-color: white;
     text-align: center;
 }
 
@@ -79,6 +87,102 @@ body{
 }
 
 h1{
-text-align: center;
-background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -73%);
+    width: 350px;
+    height: 420px;
+}
+
+#bo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    transform: translate(-50%, -73%);
+    top: 30%;
+    left: 30%;
+
+}
+
+#da{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    transform: translate(-50%, -73%);
+    top: 36%;
+    left: 24.5%;
+
+}
+
+#ds{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    transform: translate(-50%, -73%);
+    top: 42%;
+    left: 22%;
+
+}
+
+#oa{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    transform: translate(-50%, -73%);
+    top: 48%;
+    left: 29%;
+
+}
+
+#ok{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    transform: translate(-50%, -73%);
+    top: 54%;
+    left: 25.5%;
+
+}
+
+#as{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    transform: translate(-50%, -73%);
+    top: 66%;
+    left: 25.5%;
+    
+
+}
+
+#on{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    transform: translate(-50%, -73%);
+    top: 72%;
+    left: 23.5%;
+
+}
+
+#gl{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    transform: translate(-50%, -73%);
+    top: 84%;
+    left: 17.8%;
+
+}
+
+#hl{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    transform: translate(-50%, -73%);
+    top: 90%;
+    left: 17%;
 }
