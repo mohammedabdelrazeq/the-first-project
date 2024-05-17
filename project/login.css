@@ -32,7 +32,7 @@ h2{
     margin-top: 90px;
 }
 
-input[type="text"],[type="password"]{
+input[type="email"],[type="password"]{
 position: absolute;
 outline: none;
 border: none;
@@ -44,7 +44,7 @@ padding: 5px;
 color: aliceblue;
 }
 
-input[type="text"]{
+input[type="email"]{
     top: 140px;
     left: 50px;
 }
