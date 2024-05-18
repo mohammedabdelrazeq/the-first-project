@@ -1,0 +1,135 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: url(iletisim.jpg);
+    background-size: cover;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 350px;
+    background: rgba(0,0,0,.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: wheat;
+    text-align: center;
+}
+
+a[type="hak"]{
+font-size: 30px;
+color: gray;
+left: 100px;
+}
+
+a[type="hak"]:hover{
+    font-size: 30px;
+    color: black;
+    left: 100px;
+}
+
+a[type="is"]{
+    font-size: 30px;
+    color: gray;
+    left: 100px;
+    }
+
+a[type="is"]:hover{
+    font-size: 30px;
+    color: black;
+    left: 100px;
+}
+
+a[type="ozg"]{
+    font-size: 30px;
+    color: gray;
+    left: 125px;
+}
+
+a[type="ozg"]:hover{
+
+    font-size: 30px;
+    color: black;
+    left: 100px;
+}
+
+a[type="seh"]{
+    font-size: 30px;
+    color: gray;
+    left: 150px;
+}
+
+a[type="seh"]:hover{
+    font-size: 30px;
+    color: black;
+    left: 100px;
+}
+
+a[type="ilg"]{
+    font-size: 30px;
+    color: gray;
+    left: 175px;
+}
+
+a[type="ilg"]:hover{
+    font-size: 30px;
+    color: black;
+    left: 100px;
+}
+
+a[type="kap"]{
+    font-size: 30px;
+    color: gray;
+    left: 200px;
+}
+
+a[type="kap"]:hover{
+    font-size: 30px;
+    color: black;
+    left: 100px;
+}
+
+a[type="li"]{
+    font-size: 30px;
+    color: blue;
+    left: 200px;
+}
+
+a[type="li"]:hover{
+    font-size: 30px;
+    color: rgb(38, 179, 226);
+    left: 100px;
+}
+
+#fd{
+    color: blue;
+    text-align: center;
+}
+
+#gt{
+    transform: translate(21%, 650%);
+}
+
+#a{
+    color: blue;
+    transform: translate(8%, 150%);
+}
+
+#ep{
+    color: blue;
+    transform: translate(6%, 250%);
+}
+
+#m{
+    color: blue;
+    transform: translate(3%, 250%);
+}
+
+

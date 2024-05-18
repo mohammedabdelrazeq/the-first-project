@@ -1,0 +1,48 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: url(iletisim.jpg);
+    background-size: cover;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 350px;
+    background: rgba(0,0,0,.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+}
+
+#gd{
+    position: absolute;
+    color: blue;
+    transform: translate(850%, 2800%);
+}
+
+#gd:hover{
+    position: absolute;
+    color: red;
+    transform: translate(850%, 2800%);
+}
+
+#adin{
+    color: rgb(197, 85, 25) ;
+}
+
+#ep{
+    color: rgb(197, 85, 25) ;
+}
+
+#m{
+    color: rgb(197, 85, 25) ;
+}
+
+#fbg{
+    color: aqua;
+}
