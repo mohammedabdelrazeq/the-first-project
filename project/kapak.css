@@ -11,6 +11,18 @@ header{
     text-align: center;
 }
 
+a[type="is"]{
+    font-size: 30px;
+    color: gray;
+    left: 100px;
+    }
+
+a[type="is"]:hover{
+    font-size: 30px;
+    color: black;
+    left: 100px;
+}
+
 a[type="hak"]{
 font-size: 30px;
 color: gray;

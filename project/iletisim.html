@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iletisim.css">
+    <title>İletişim Formu</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+<body>
+
+    <header> 
+        <a href="hakkinda.html" type="hak">Hakkımda---</a>
+        <a href="ozgecmis-sayfasi.html" type="ozg">Özgeçmiş---</a>
+        <a href="sehirim.html" type="seh">Şehirim---</a>
+        <a href="İlgi-alanlarim.html" type="ilg">ilgi Alanlarım---</a>
+        <a href="iletisim.html" type="is">İletişim Sayfası---</a>
+        <a href="kapak-sayfa.html" type="kap">Kapak Sayfası-</a>
+        <a href="login.html" type="li">LogIn</a>
+    </header>
+
+    <div id="app">
+        <form @submit.prevent="validateForm">
+
+            <h2 id="fd">Formu doldur</h2>
+
+            <div id="a">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" v-model="formData.name">
+                <span v-if="errors.name" class="error">{{ errors.name }}</span>
+            </div>
+            <div id="ep">
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" v-model="formData.email">
+                <span v-if="errors.email" class="error">{{ errors.email }}</span>
+            </div>
+            <div id="m">
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" v-model="formData.message"></textarea>
+                <span v-if="errors.message" class="error">{{ errors.message }}</span>
+            </div>
+            <div id="gt">
+                <button type="submit">Gönder</button>
+                <button type="button" @click="clearForm">Temizle</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                formData: {
+                    name: '',
+                    email: '',
+                    message: ''
+                },
+                errors: {}
+            },
+            methods: {
+                validateForm() {
+                    this.errors = {};
+
+                    if (!this.formData.name) {
+                        this.errors.name = "Adınızı giriniz.";
+                    }
+
+                    if (!this.formData.email) {
+                        this.errors.email = "E-posta adresinizi giriniz.";
+                    } else if (!this.validEmail(this.formData.email)) {
+                        this.errors.email = "Geçerli bir e-posta adresi giriniz.";
+                    }
+
+                    if (!this.formData.message) {
+                        this.errors.message = "Mesajınızı giriniz.";
+                    }
+
+                    if (Object.keys(this.errors).length === 0) {
+                        this.submitForm();
+                    }
+                },
+                validEmail(email) {
+                    var re = /^(([^<>()\[\]\.,;:\s@"]+(\.[^<>()\[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    return re.test(String(email).toLowerCase());
+                },
+                clearForm() {
+                    this.formData.name = '';
+                    this.formData.email = '';
+                    this.formData.message = '';
+                    this.errors = {};
+                },
+                submitForm() {
+                    window.location.href = 'success.html?' + new URLSearchParams(this.formData).toString();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
