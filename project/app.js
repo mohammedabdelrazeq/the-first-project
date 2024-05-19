@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = '4d2490c8b18d583837810f792dd826f1'; // Replace with your TMDb API key
-    const movieIds = [550, 578, 299534, 603, 13]; // Example movie IDs (Fight Club, Jaws, Avengers: Endgame, The Matrix, Forrest Gump)
+    const apiKey = '4d2490c8b18d583837810f792dd826f1';
+    const movieIds = [547, 563, 29834, 513, 12];
 
     const movieList = document.getElementById('movie-list');
 
